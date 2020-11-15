@@ -1,0 +1,29 @@
+import React, { Component } from "react";
+import { StyleSheet, Text, View } from "react-native";
+
+import Leonard from "./Leonard";
+
+export default class App extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>This is the HOME screen.</Text>
+        <Leonard color="skyblue" styleObj="big" />
+        <Leonard color="red" styleObj="big" />
+      </View>
+    );
+  }
+}
+
+//class Leonard extends Component{
+
+//}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
